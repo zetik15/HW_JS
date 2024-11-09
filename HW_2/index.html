@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Task_1
+
+        let num1 = Number(prompt('Введите первое число'));
+        let num2 = Number(prompt('Введите второе число'));
+
+        if (num1 < 1 || num1 === 1) {
+            console.log('Ваше число меньше 1, либо равно 1');
+        } else {
+            console.log('Вы ввели число больше 1');
+        }
+
+        if (num2 > 3 || num2 === 3) {
+            console.log('Ваше число больше 3, либо равно 3');
+        } else {
+            console.log('Вы ввели число меньше 3');
+        }
+
+        //Task_2
+
+        let test = false;
+        console.log((test === true) ? '+++' : '---');
+
+        //Task_3
+
+        let day = prompt('Введите число от 0 до 31');
+        if (day > 0 && day <= 10) {
+            console.log('1 декада');
+        } else if (day > 10 && day <= 20) {
+            console.log('2 декада');
+        } else if (day > 20 && day <= 31) {
+            console.log('3 декада');
+        } else {
+            console.log('Введите корректное число');
+        }
+
+        //Task_4
+
+        let num = Number(prompt('Введите число'));
+        let hundreds = Math.floor(num / 100);
+        let dozens = Math.floor((num % 100) / 10);
+        let units = Math.floor(num % 10);
+        console.log(`Число сотен: ${hundreds}`);
+        console.log(`Число десятков: ${dozens}`);
+        console.log(`Число единиц: ${units}`);
+    </script>
+</body>
+
+</html>
